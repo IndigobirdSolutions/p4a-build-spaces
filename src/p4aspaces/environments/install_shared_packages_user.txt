@@ -1,4 +1,5 @@
 
 # Install p4a & buildozer as regular user:
-RUN $PIP install --user -U https://github.com/kivy/buildozer/archive/master.zip {P4A_URL} # {P4A_COMMENT}
+RUN $PIP install --user -e git+https://github.com/IndigobirdSolutions/buildozer.git#egg=buildozer
+RUN $PIP install --user -U {P4A_URL} # {P4A_COMMENT}
 
