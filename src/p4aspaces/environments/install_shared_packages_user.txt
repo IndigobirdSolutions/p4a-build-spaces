@@ -1,3 +1,3 @@
 
 # Install p4a & buildozer as regular user:
-RUN cd /home/userhome/ && $PIP install --user -e git+https://github.com/IndigobirdSolutions/buildozer.git#egg=buildozer && $PIP install --user -U {P4A_URL} # {P4A_COMMENT}
+RUN cd /home/userhome/ && $PIP install --user -e git+https://github.com/IndigobirdSolutions/buildozer.git#egg=buildozer

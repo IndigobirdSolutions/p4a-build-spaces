@@ -27,7 +27,7 @@ RUN chown -R builduser /p4a
 {INSTALL_SHARED_PACKAGES_USER}
 
 # Get the kivy test app:
-RUN cd /p4a && git clone https://github.com/IndigobirdSolutions/python-for-android .
+RUN cd /p4a && git clone https://github.com/IndigobirdSolutions/python-for-android . && python setup.py develop --user
 
 # Final command line preparation:
 RUN echo '{LAUNCH_CMD}' > /tmp/launchcmd.txt
